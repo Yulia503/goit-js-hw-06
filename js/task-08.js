@@ -33,7 +33,7 @@ function onSubmit (evt) {
     // console.log(password);
 
 if (!email.value.trim() || !password.value.trim()) {
-    return alart("Please, back and fill in all the forms!");
+ return alert ("Please, back and fill in all the forms!");
 } else {
 const data = {
     userEmail : email.value,

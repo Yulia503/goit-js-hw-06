@@ -61,6 +61,6 @@ console.log('Number of categories:', amountItems);
 
 const itemElement = document.querySelectorAll('.item'); //знах. всі елементи з класом item
 itemElement.forEach (item => {   // перебираємо кожен елемент
-    console.log('Category:', item.children[0].textContent, 'Elements:', item.children[1].children.length);
+    console.log('Category:', item.firstElementChild.textContent, 'Elements:', item.lastElementChild.children.length);
 }) // визнач. назву кожного 0 елем. в кожній li, запис. за доп. textContent
 // визнач. кількість елементів за доп. children.length в кожному першому елем.[1]
